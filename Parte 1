@@ -1,9 +1,8 @@
 #include <iostream>
 
 using namespace std;
-
+// Parte 1: Variáveis, constantes e operações matemáticas
 int main() {
-    // Parte 1: Variáveis, constantes e operações matemáticas
     int a, b;
     const double PI = 3.14159;
 
@@ -31,3 +30,5 @@ int main() {
 
     double area = PI * raio * raio;
     cout << "Área do círculo: " << area << endl;
+  return 0;
+}
