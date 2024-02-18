@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+
+
+int notas[5];
+    int somaNotas = 0;
+
+    for (int i = 0; i < 5; ++i) {
+        cout << "Digite a nota do aluno " << i + 1 << ": ";
+        cin >> notas[i];
+        somaNotas += notas[i];
+    }
+
+    double media = static_cast<double>(somaNotas) / 5;
+
+    int maiorNota = notas[0];
+    int menorNota = notas[0];
+
+    for (int i = 1; i < 5; ++i) {
+        if (notas[i] > maiorNota) {
+            maiorNota = notas[i];
+        }
+        if (notas[i] < menorNota) {
+            menorNota = notas[i];
+        }
+    }
+
+    cout << "Média das notas: " << media << endl;
+    cout << "Maior nota: " << maiorNota << endl;
+    cout << "Menor nota: " << menorNota << endl;
+
+    int numeros[10];
+
+    for (int i = 0; i < 10; ++i) {
+        cout << "Digite o valor do elemento " << i + 1 << ": ";
+        cin >> numeros[i];
+    }
+
+    int maiorElemento = numeros[0];
+    int menorElemento = numeros[0];
+
+    for (int i = 1; i < 10; ++i) {
+        if (numeros[i] > maiorElemento) {
+            maiorElemento = numeros[i];
+        }
+        if (numeros[i] < menorElemento) {
+            menorElemento = numeros[i];
+        }
+    }
+
+    cout << "Maior elemento: " << maiorElemento << endl;
+    cout << "Menor elemento: " << menorElemento << endl;
+
+return 0;
+}
